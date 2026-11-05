@@ -8,7 +8,7 @@ import json
 import sys
 
 PROTOCOL = "2025-06-18"
-SERVER = {"name": "crowdsentinel-mcp-server-es9", "version": "0.9.1"}
+SERVER = {"name": "crowdsentinel-mcp-server-es9", "version": "0.9.2"}
 
 
 def _send(obj: dict) -> None:

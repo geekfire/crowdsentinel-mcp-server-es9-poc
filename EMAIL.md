@@ -1,7 +1,9 @@
 Subject: [Security] Unclaimed PyPI names in your MCP docs — `crowdsentinel-mcp-server-es9` / `-es9` (dependency confusion, PoC included)
-
 To: medjed@crowdsentinel.io
 Cc: (repo issue / GitHub Security Advisory if enabled)
+
+> **渠道状态（2026-11-05）**：`medjed@crowdsentinel.io` 已不可达 —— `crowdsentinel.io` 无 MX、不解析、TLS 也失败，PyPI 元数据里这个地址是死的。主渠道改为在本仓库开 issue 并 @thomasxm（GitHub 会替他发信）。邮件照发不误，但必须把 NDR 一起存证。
+
 
 Hi,
 
@@ -48,7 +50,7 @@ I published a harmless placeholder under `crowdsentinel-mcp-server-es9` (v0.9.0,
 
 The `[poc] module=` line is the whole point: it resolves to a cache `site-packages` path, not to a checkout of your repo. A real attacker's package would behave identically, plus do whatever it wants.
 
-Recorded output and the package source are attached / linked below.
+Recorded output is attached as `REPORT.zip` (A before upload / B after / C control, plus SHA256SUMS). Package source: https://github.com/geekfire/crowdsentinel-mcp-server-es9-poc
 
 ## Suggested fix
 
@@ -71,5 +73,5 @@ Timeline proposal: 90 days from this mail, then public write-up either way. I'll
 Thanks — and nice work on the main server, the es9/ES9 split is a genuinely good idea.
 
 Best,
-<YOUR NAME> (@mcpsec-lab)
-<YOUR SITE / H1 PROFILE>
+geekfire (PyPI: `mcpsec-lab`)
+https://github.com/geekfire

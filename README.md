@@ -39,7 +39,7 @@ pwsh -File .\verify.ps1
 1. 在 PyPI 项目 Settings → Collaborators 里加 `@mcpsec-lab`，或
 2. 直接在 GitHub issue / 邮件里说要，我用 `uv publish` 发一个新版本后把 owner 转过去
 
-版本号停在 `0.9.1`：低于主包当前线，但远高于"不存在"，占位期不会被任何 pin 挡住。
+版本号停在 `0.9.2`：低于主包当前线，但远高于"不存在"，占位期不会被任何 pin 挡住。
 
 上游：<https://github.com/thomasxm/CrowdSentinels-AI-MCP>
-报告联系人：`medjed@crowdsentinel.io`
+报告渠道：GitHub issue + @thomasxm（主）／`medjed@crowdsentinel.io`（域名已失效，仅作记录）

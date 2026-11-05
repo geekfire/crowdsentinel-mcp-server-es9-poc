@@ -50,17 +50,20 @@ uv publish                        # 或 twine upload dist/*
 
 > 顺序提醒：A 段最好**占名前**录，那是唯一能录到真 404 的时刻。已经占了就退而用本地空索引复现。
 
-## 6. 发信
+## 6. 通知（GitHub 为主，邮件为备）
 
-- [ ] `EMAIL.md` 全文检查，附件带 evidence 压缩包
-- [ ] 收件 `medjed@crowdsentinel.io`（PyPI 上的作者邮箱）
-- [ ] 同时在仓库开一条 issue，标题只写 "unclaimed PyPI names in README"，正文链到邮件要点
+> 2026-11-05 实测：`medjed@crowdsentinel.io` bounce，域名无 MX 且不解析。别把邮件当主渠道。
+
+- [ ] 先在上游仓库开 issue，标题只写 "Two install commands in README point at unclaimed PyPI names"
+- [ ] 正文 @ 维护者（`@thomasxm`），GitHub 会替他发通知信
+- [ ] 再发一次邮件（`EMAIL.md` + `REPORT.zip`），**保存 NDR 原文**当已尽通知义务的证据
+- [ ] 拿到 NDR 后，在 issue 里补一条渠道说明，并请他给一个能用的地址
 
 ## 7. 跟进
 
 | 时间 | 动作 |
 |---|---|
-| +7 天 | 无回复 → 简短 ping 一次 |
+| +7 天 | 无回复 → 在 issue 里再 @ 一次，一句 "still open, any update?" |
 | +30 天 | 仍无回复 → 提 MITRE cveform，附录屏与仓库链接 |
 | +90 天 | 无论结果，公开写复盘 |
 

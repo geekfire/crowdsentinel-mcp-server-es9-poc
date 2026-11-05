@@ -10,7 +10,7 @@ import platform
 import subprocess
 import sys
 
-MARKER = "crowdsentinel-mcp-server-es9 PoC v0.9.1"
+MARKER = "crowdsentinel-mcp-server-es9 PoC v0.9.2"
 
 _SECRET_HINTS = ("TOKEN", "KEY", "SECRET", "PASSWORD", "CREDENTIAL", "ES_", "ELASTIC")
 

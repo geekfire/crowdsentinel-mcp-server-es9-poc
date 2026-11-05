@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "crowdsentinel-mcp-server-es9"
-version = "0.9.1"
+version = "0.9.2"
 description = "Security research PoC: console entry point for the unclaimed PyPI name used by CrowdSentinels-AI-MCP docs"
 readme = "README.md"
 requires-python = ">=3.10"
