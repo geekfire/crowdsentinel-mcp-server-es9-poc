@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crowdsentinel-mcp-server-es9"
+version = "0.9.1"
+description = "Security research PoC: console entry point for the unclaimed PyPI name used by CrowdSentinels-AI-MCP docs"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "SECURITY RESEARCH — mcpsec-lab" }]
+keywords = ["mcp", "elasticsearch", "dependency-confusion", "security-research"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+]
+dependencies = []          # 故意零依赖：评审者一眼看完，也不受网络影响
+
+[project.urls]
+Homepage = "https://github.com/geekfire/crowdsentinel-mcp-server-es9-poc"
+"Upstream repo" = "https://github.com/thomasxm/CrowdSentinels-AI-MCP"
+"Upstream issues" = "https://github.com/thomasxm/CrowdSentinels-AI-MCP/issues"
+
+[project.scripts]
+# 名字必须与文档里那条 uvx 命令的包名完全一致
+crowdsentinel-mcp-server-es9 = "crowdsentinel_mcp_server_es9.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crowdsentinel_mcp_server_es9"]

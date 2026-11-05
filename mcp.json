@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "crowdsentinel": {
+      "command": "uvx",
+      "args": ["crowdsentinel-mcp-server-es9"],
+      "env": {
+        "ES_URL": "http://localhost:9200",
+        "ES_API_KEY": "REPLACE_ME"
+      }
+    }
+  }
+}
